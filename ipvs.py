@@ -99,6 +99,9 @@ IpvsDestAttrList = netlink.create_attr_list_type(
     ('STATS', IpvsStatsAttrList),
     ('ADDR_FAMILY', netlink.U16Type),
     ('STATS64', IpvsStatsAttrList64),
+    ('TUN_TYPE', netlink.U8Type),
+    ('TUN_PORT', netlink.Net16Type),
+    ('TUN_FLAGS', netlink.U16Type),
 )
 
 IpvsDaemonAttrList = netlink.create_attr_list_type(
